@@ -8,6 +8,9 @@ app.set('view engine', 'ejs');
 // habilitar arquivos statics
 app.use(express.static('public'));
 
+// usando req.body
+app.use(express.urlencoded({ extended: true }))
+
 // usando rotas do routes.js
 app.use(routes)
 

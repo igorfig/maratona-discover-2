@@ -2,3 +2,5 @@
 <h2 align="center">Aula 1</h2>
 
 - Reaproveitar linhas de código com EJS template engine, como por exemplo a tag &lt;head&gt; dos arquivos ejs.
+
+- verificar se os campos do job edit estão preenchidos, se não mandar um erro
