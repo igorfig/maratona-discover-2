@@ -1,9 +1,14 @@
 const express = require("express");
 const routes = require("./routes");
 const app = express();
+const path = require("path");
 
-// setando a template engine ejs
+// configurando a template engine ejs
 app.set('view engine', 'ejs');
+
+// Mudar a localização da pasta views
+
+app.set('views', path.join(__dirname + '/views'))
 
 // habilitar arquivos statics
 app.use(express.static('public'));
